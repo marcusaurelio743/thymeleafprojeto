@@ -25,9 +25,23 @@
 		</form>
 		
 		
-		
+		<br/>
+		<br/>
 	
-	<a href="/listapessoas">Lista</a>
+	<a href="/listapessoas">Lista de Pessoas</a>
+	
+	    <br/>
+		<br/>
+		
+		<form action="/pesquisarPessoa" method="post">
+			<label>Pesquisar Por Nome:</label>
+			<input name="nomePesquisa"/>
+			<input type="submit" value="Pesquisar" class="btn waves-effect waves-light">
+		
+		</form>
+		
+		<br/>
+		<br/>
 	
 	<table>
 		<tr th:each= "pessoa: ${pessoas}">
